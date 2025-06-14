@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Paul</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="modal.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo"><a href="#">Tech<span>paul</span></a></div>
+        <nav class="navigation">
+            <ul>
+                <li class="menu-links"><a href="./index.html">Home</a></li>
+                <li class="menu-links"><a href="./index.html#about">About</a></li>
+                <li class="menu-links"><a href="./index.html#product">Product</a></li>
+                <li class="menu-links"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth">
+            <button class="login-btn btn" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section: Top banner with product highlight -->
+        <section id="hero" class="hero" data-aos="fade-up">
+            <div class="hero-content">
+                <h3 class="hero-title"><span style="color: #00BFFF;">Precision</span> You Can Trust.</h3>
+                <h5>Unleash peak performance with advanced tech tools.</h5>
+                <p class="hero-description">
+                    Discover our complete lineup of Logitech mice — trusted worldwide for their cutting-edge technology,
+                    ergonomic design, and unbeatable performance. Whether for gaming, design, or everyday use, Logitech
+                    delivers the control you need, down to the last click.
+                </p>
+                <a href="shop.php" class="shop-btn" onclick="checkLoginAndProceed(event, 'shop.php')">Shop Now</a>
+                <!-- Updated to trigger login check -->
+            </div>
+
+            <!-- Hero image of the featured product -->
+            <div class="hero-image">
+                <img src="../images/products/mouse blue.webp" alt="G502 Hero">
+                <span class="g502">G502</span> <!-- Label for the product -->
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about" data-aos="fade-up">
+            <div class="about-content">
+                <h3 class="about-title">About Us</h3>
+                <p class="about-description">
+                    At Techpaul, we specialize in offering only the best — and that means 100% genuine Logitech mice.
+                    Whether you're a gamer needing ultra-fast responsiveness, a designer requiring precision tracking,
+                    or a professional who values comfort and durability, we've got a Logitech mouse made for you.
+                    <br><br>
+
+                    We believe in quality, performance, and trust — and Logitech delivers all three. That's why our
+                    store is fully dedicated to showcasing Logitech's advanced technology and ergonomic designs that
+                    stand out in every click, scroll, and movement.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Product Section -->
+        <section id="product" class="product-section" data-aos="fade-up">
+            <div class="product-header">
+                <div>
+                    <h2 class="product-title">Product</h2>
+                    <p class="product-subtitle">Which type of gear are you looking for?</p>
+                </div>
+                <a href="products.html" class="view-all" data-action="products.html">View all →</a>
+            </div>
+
+            <div class="gear-categories">
+                <div class="gear-card" data-aos="fade-up">
+                    <a href="gaming-product.html" data-action="gaming-product.html">
+                        <img src="../images/products/mouse blue.webp" alt="Gaming Mouse">
+                        <h3 class="gear-label">Gaming</h3>
+                    </a>
+                </div>
+                <div class="gear-card" data-aos="fade-up">
+                    <a href="office-product.html" data-action="office-product.html">
+                        <img src="../images/products/logitech office.png" alt="Office Mouse">
+                        <h3 class="gear-label">Office</h3>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-cards" data-aos="fade-up">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="../images/products/mouse blue.webp" class="card-img-top" alt="G502 Hero">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">G502 Hero</h5>
+                        <p class="card-text">High-performance gaming mouse with HERO 25K sensor, 11 programmable
+                            buttons, and customizable RGB lighting.</p>
+                        <div class="card-price">$59.99</div>
+                        <a class="order-now" data-action="order" data-product="g502">Order Now</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="../images/products/pro-x-superlight-black.webp" class="card-img-top"
+                            alt="PRO X SUPERLIGHT">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">PRO X SUPERLIGHT</h5>
+                        <p class="card-text">Ultra-lightweight pro gaming mouse with HERO 25K sensor and less than 63g
+                            weight.</p>
+                        <div class="card-price">$129.99</div>
+                        <a class="order-now" data-action="order" data-product="pro-x-superlight">Order Now</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="../images/products/g903.png" class="card-img-top" alt="G903">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">G903</h5>
+                        <p class="card-text">Advanced wireless gaming mouse with ambidextrous design, LIGHTSPEED
+                            technology, and HERO 25K sensor.</p>
+                        <div class="card-price">$149.99</div>
+                        <a class="order-now" data-action="order" data-product="g903">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-cards" data-aos="fade-up">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="../images/products/g304.png" class="card-img-top" alt="G304">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">G304</h5>
+                        <p class="card-text">Wireless gaming mouse with HERO sensor, 6 programmable buttons, and
+                            lightweight design.</p>
+                        <div class="card-price">$49.99</div>
+                        <a class="order-now" data-action="order" data-product="g304">Order Now</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="../images/products/G402 Hyperion Fury.png" class="card-img-top"
+                            alt="G402 Hyperion Fury">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">G402 Hyperion Fury</h5>
+                        <p class="card-text">Ultra-fast FPS gaming mouse with Fusion Engine hybrid sensor and 8
+                            programmable buttons.</p>
+                        <div class="card-price">$59.99</div>
+                        <a class="order-now" data-action="order" data-product="g402">Order Now</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="../images/products/G703.png" class="card-img-top" alt="G703">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">G703</h5>
+                        <p class="card-text">Wireless gaming mouse with LIGHTSPEED technology, HERO 25K sensor, and
+                            POWERPLAY compatibility.</p>
+                        <div class="card-price">$99.99</div>
+                        <a class="order-now" data-action="order" data-product="g703">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more-container">
+                <a href="products.html" class="view-all" data-action="products.html">Load More</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-md-6 col-12">
+                    <h3>Tech<span>paul</span></h3>
+                    <p>Specializing in premium Logitech mice for gaming, design, and work.</p>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Showcase</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h4>Affiliates</h4>
+                    <ul>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-12">
+                    <h4>Link</h4>
+                    <ul>
+                        <li class="menu-links"><a href="./index.html">Home</a></li>
+                        <li class="menu-links"><a href="./index.html#about">About</a></li>
+                        <li class="menu-links"><a href="#product">Product</a></li>
+                        <li class="menu-links"><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/JP.delacera.78/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.com/channels/@me"><i class="fab fa-discord"></i></a>
+                    </div>
+                    <p class="mt-3">© 2025 TechGear. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="loginModalLabel">
+                        <i class="fas fa-user-circle me-2"></i> Sign In
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">
+                                <i class="fas fa-envelope me-2"></i> Email Address
+                            </label>
+                            <div class="input-group">
+                                <input type="email" class="form-control" id="loginEmail" name="email"
+                                    placeholder="Enter your email" required>
+                                <span class="input-group-text input-icon">
+                                    <i class="fas fa-at"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">
+                                <i class="fas fa-lock me-2"></i> Password
+                            </label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="loginPassword" name="password"
+                                    placeholder="Enter your password" required>
+                                <span class="input-icon toggle-password" role="button">
+                                    <i class="fas fa-eye" id="togglePasswordIcon"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="rememberMe" name="remember">
+                                <label class="form-check-label" for="rememberMe">Remember me</label>
+                            </div>
+                            <a href="#" class="forgot-password">Forgot Password?</a>
+                        </div>
+
+                        <p>Don't have an account?
+                            <a href="#" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#registerModal">
+                                Sign up
+                            </a>
+                        </p>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times me-2"></i> Cancel
+                    </button>
+                    <button type="submit" form="loginForm" class="btn btn-primary" id="loginSubmit">
+                        <i class="fas fa-sign-in-alt me-2"></i> Sign In
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Registration Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="registerModalLabel">
+                        <i class="fas fa-user-plus me-2"></i> Sign Up
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="mb-3">
+                            <label for="registerUsername" class="form-label">
+                                <i class="fas fa-user me-2"></i>Username
+                            </label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="registerUsername" name="username"
+                                    placeholder="Enter your username" required>
+                                <i class="fas fa-user input-icon"></i>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">
+                                <i class="fas fa-envelope me-2"></i>Email Address
+                            </label>
+                            <div class="input-group">
+                                <input type="email" class="form-control" id="registerEmail" name="email"
+                                    placeholder="Enter your email" required>
+                                <i class="fas fa-at input-icon"></i>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">
+                                <i class="fas fa-lock me-2"></i>Password
+                            </label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="registerPassword" name="password"
+                                    placeholder="Enter your password" required>
+                                <i class="fas fa-key input-icon"></i>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">
+                                <i class="fas fa-lock me-2"></i>Confirm Password
+                            </label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"
+                                    placeholder="Confirm your password" required>
+                                <i class="fas fa-key input-icon"></i>
+                            </div>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="termsAgree" name="terms" required>
+                            <label class="form-check-label" for="termsAgree">I agree to the <a href="#"
+                                    class="forgot-password">Terms of Service</a></label>
+                        </div>
+                        <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-dismiss="modal"
+                                data-bs-target="#loginModal">Sign in</a></p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times me-2"></i>Cancel
+                    </button>
+                    <button type="submit" form="registerForm" class="btn btn-primary" id="registerSubmit">
+                        <i class="fas fa-user-plus me-2"></i> Sign Up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Modal -->
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="orderModalLabel">
+                        <i class="fas fa-shopping-cart me-2"></i> Place Order
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="orderForm">
+                        <div class="mb-3">
+                            <label for="orderProduct" class="form-label">
+                                <i class="fas fa-box me-2"></i>Product
+                            </label>
+                            <input type="text" class="form-control" id="orderProduct" name="product" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="itemsLeft" class="form-label">
+                                <i class="fas fa-warehouse me-2"></i>Items Left
+                            </label>
+                            <input type="text" class="form-control" id="itemsLeft" name="itemsLeft" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="orderQuantity" class="form-label">
+                                <i class="fas fa-sort-numeric-up me-2"></i>Quantity
+                            </label>
+                            <input type="number" class="form-control" id="orderQuantity" name="quantity" min="1"
+                                required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times me-2"></i>Cancel
+                    </button>
+                    <button type="submit" form="orderForm" class="btn btn-primary" id="orderSubmit">
+                        <i class="fas fa-check me-2"></i>Submit Order
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./js/auth.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Password toggle functionality
+        const passwordInput = document.getElementById("loginPassword");
+        const toggleIcon = document.getElementById("togglePasswordIcon");
+        const toggleButton = document.querySelector(".toggle-password");
+
+        toggleButton.addEventListener("click", () => {
+            const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+            passwordInput.setAttribute("type", type);
+            toggleIcon.classList.toggle("fa-eye");
+            toggleIcon.classList.toggle("fa-eye-slash");
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<main class="main">
+    <!-- Hero Section: Top banner with product highlight -->
+    <section id="hero" class="hero" data-aos="fade-up">
+        <div class="hero-content">
+            <h3 class="hero-title"><span style="color: #00BFFF;">Precision</span> You Can Trust.</h3>
+            <h5>Unleash peak performance with advanced tech tools.</h5>
+            <p class="hero-description">
+                Discover our complete lineup of Logitech mice — trusted worldwide for their cutting-edge technology, ergonomic design, and unbeatable performance. Whether for gaming, design, or everyday use, Logitech delivers the control you need, down to the last click.
+            </p>
+            <a href="shop.php" class="shop-btn" onclick="checkLoginAndProceed(event, 'shop.php')">Shop Now</a> <!-- Updated to trigger login check -->
+        </div>
+
+        <!-- Hero image of the featured product -->
+        <div class="hero-image">
+            <img src="../images/products/mouse blue.webp" alt="G502 Hero">
+            <span class="g502">G502</span> <!-- Label for the product -->
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about" data-aos="fade-up">
+        <div class="about-content">
+            <h3 class="about-title">About Us</h3>
+            <p class="about-description">
+                At Techpaul, we specialize in offering only the best — and that means 100% genuine Logitech mice. Whether you're a gamer needing ultra-fast responsiveness, a designer requiring precision tracking, or a professional who values comfort and durability, we’ve got a Logitech mouse made for you. <br><br>
+
+                We believe in quality, performance, and trust — and Logitech delivers all three. That’s why our store is fully dedicated to showcasing Logitech’s advanced technology and ergonomic designs that stand out in every click, scroll, and movement.
+            </p>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="product" class="product-section" data-aos="fade-up">
+
+        <!-- Product header/title with link to view all products -->
+        <div class="product-header">
+            <div>
+                <h2 class="product-title">Product</h2>
+                <p class="product-subtitle">Which type of gear are you looking for?</p>
+            </div>
+            <a href="products.php" class="view-all" onclick="checkLoginAndProceed(event, 'products.php')">View all →</a> <!-- Updated to trigger login check -->
+        </div>
+
+        <!-- Gear category cards: Gaming and Office -->
+        <div class="gear-categories">
+            <div class="gear-card" data-aos="fade-up">
+                <a href="gaming-product.php" onclick="checkLoginAndProceed(event, 'gaming-product.php')">
+                    <img src="../images/products/mouse blue.webp" alt="Gaming Mouse">
+                    <h3 class="gear-label">Gaming</h3>
+                </a>
+            </div>
+            <div class="gear-card" data-aos="fade-up">
+                <a href="office-product.php" onclick="checkLoginAndProceed(event, 'office-product.php')">
+                    <img src="../images/products/logitech office.png" alt="Office Mouse">
+                    <h3 class="gear-label">Office</h3>
+                </a>
+            </div>
+        </div>
+
+        <!-- First row of product cards -->
+        <div class="product-cards" data-aos="fade-up">
+            <!-- G502 Hero Mouse -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="../images/products/mouse blue.webp" class="card-img-top" alt="G502 Hero">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">G502 Hero</h5>
+                    <p class="card-text">High-performance gaming mouse with HERO 25K sensor, 11 programmable buttons, and customizable RGB lighting for ultimate precision and control.</p>
+                    <div class="card-price">$59.99</div>
+                    <a href="order.php?product=g502" class="order-now" onclick="checkLoginAndProceed(event, 'order.php?product=g502')">Order Now</a>
+                </div>
+            </div>
+
+            <!-- PRO X SUPERLIGHT Mouse -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="../images/products/pro-x-superlight-black.webp" class="card-img-top" alt="PRO X SUPERLIGHT">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">PRO X SUPERLIGHT</h5>
+                    <p class="card-text">Ultra-lightweight pro gaming mouse designed for esports professionals, featuring HERO 25K sensor and less than 63g weight.</p>
+                    <div class="card-price">$129.99</div>
+                    <a href="order.php?product=pro-x-superlight" class="order-now" onclick="checkLoginAndProceed(event, 'order.php?product=pro-x-superlight')">Order Now</a>
+                </div>
+            </div>
+
+            <!-- G903 Mouse -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="../images/products/g903.png" class="card-img-top" alt="G903">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">G903</h5>
+                    <p class="card-text">Advanced wireless gaming mouse with ambidextrous design, LIGHTSPEED technology, and HERO 25K sensor for pro-grade performance.</p>
+                    <div class="card-price">$149.99</div>
+                    <a href="order.php?product=g903" class="order-now" onclick="checkLoginAndProceed(event, 'order.php?product=g903')">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second row of product cards -->
+        <div class="product-cards" data-aos="fade-up">
+            <!-- G304 Mouse -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="../images/products/g304.png" class="card-img-top" alt="G304">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">G304</h5>
+                    <p class="card-text">Wireless gaming mouse with HERO sensor, 6 programmable buttons, and lightweight design for maximum gaming performance.</p>
+                    <div class="card-price">$49.99</div>
+                    <a href="order.php?product=g304" class="order-now" onclick="checkLoginAndProceed(event, 'order.php?product=g304')">Order Now</a>
+                </div>
+            </div>
+
+            <!-- G402 Hyperion Fury Mouse -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="../images/products/G402 Hyperion Fury.png" class="card-img-top" alt="G402 Hyperion Fury">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">G402 Hyperion Fury</h5>
+                    <p class="card-text">Ultra-fast FPS gaming mouse with Fusion Engine hybrid sensor and 8 programmable buttons for competitive gameplay.</p>
+                    <div class="card-price">$59.99</div>
+                    <a href="order.php?product=g402" class="order-now" onclick="checkLoginAndProceed(event, 'order.php?product=g402')">Order Now</a>
+                </div>
+            </div>
+
+            <!-- G703 Mouse -->
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="../images/products/G703.png" class="card-img-top" alt="G703">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">G703</h5>
+                    <p class="card-text">Wireless gaming mouse with LIGHTSPEED technology, HERO 25K sensor, and POWERPLAY compatibility for endless gaming.</p>
+                    <div class="card-price">$99.99</div>
+                    <a href="order.php?product=g703" class="order-now" onclick="checkLoginAndProceed(event, 'order.php?product=g703')">Order Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="load-more-container">
+            <a href="products.php" class="view-all" onclick="checkLoginAndProceed(event, 'products.php')">Load More</a>
+        </div>
+    </section>
+</main>

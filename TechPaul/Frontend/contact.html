@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Paul</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="modal.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo"><a href="#">Tech<span>paul</span></a></div>
+        <nav class="navigation">
+            <ul>
+                <li class="menu-links"><a href="./index.html">Home</a></li>
+                <li class="menu-links"><a href="./index.html#about">About</a></li>
+                <li class="menu-links"><a href="./index.html#product">Product</a></li>
+                <li class="menu-links"><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth">
+            <button class="login-btn btn" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+
+        <!-- Top header with title and image -->
+        <div class="contact-header" data-aos="fade-left">
+            <h2>Contact Us</h2>
+            <img src="../images/contact-us-img.jpg" alt="contact us image">
+        </div>
+
+        <!-- Static map image showing location -->
+        <div class="message-us" data-aos="fade-left">
+            <img class="location-map" src="../images/contact-us-img-map.png" alt="location-maps">
+        </div>
+
+        <!-- Message sending form -->
+        <div class="container" data-aos="fade-up">
+            <h3 class="text-center mb-4 fw-bold">Send Message</h3>
+            <form data-aos="fade-up">
+                <!-- Input fields for last and first name -->
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <input type="text" name="first_name" class="form-control py-2" placeholder="First Name"
+                            required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control py-2" placeholder="Lastname Name" required>
+                    </div>
+                </div>
+
+                <!-- Input fields for email and subject -->
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <input type="email" class="form-control py-2" placeholder="Email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control py-2" placeholder="Subject" required>
+                    </div>
+                </div>
+
+                <!-- Text area for message -->
+                <div class="mb-4">
+                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+
+                <!-- Submit button -->
+                <div class="text-center mb-5">
+                    <button id="send-msg" type="submit" class="btn mt-3 px-5 py-2 fw-semibold rounded-pill">Send
+                        Message</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Contact information section -->
+        <div class="git-container" data-aos="fade-up">
+            <div class="text-center">
+                <h3 class="fw-bold">Get In Touch With Us</h3>
+            </div>
+
+            <!-- Info cards: location, phone, email -->
+            <div class="contact-info">
+                <a href="https://www.google.com/maps/place/Lude%C3%B1a+St,+Balingasag,+Misamis+Oriental/@8.7430831,124.7741442,17z/data=!3m1!4b1!4m6!3m5!1s0x32ffe1f657a626b9:0xea1d6b0da2acb044!8m2!3d8.7430778!4d124.7767191!16s%2Fg%2F12htc6j5b?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D"
+                    class="contact-card">
+                    <img src="../images/location.png" alt="Location Icon">
+                    <h5>Our Location</h5>
+                    <p>Barangay 6, Balingasag, Misamis Oriental</p>
+                </a>
+                <a class="contact-card">
+                    <img src="../images/phone.png" alt="Phone Icon">
+                    <h5>Phone Number</h5>
+                    <p>+63 939-251-6664</p>
+                </a>
+                <a class="contact-card">
+                    <img src="../images/email.png" alt="Email Icon">
+                    <h5>Email Us</h5>
+                    <p>delacerajanpaul08@gmail.com</p>
+                </a>
+            </div>
+
+            <!-- Call to action: link to product collection -->
+            <div class="collaboration" data-aos="fade-up">
+                <h2>Gear Up for Work and Play</h2>
+                <p class="text-center mb-3">
+                    Whether you're building the ultimate gaming setup or upgrading your office gear, we've got the
+                    perfect mouse for you.
+                </p>
+                <div class="text-center mt-3">
+                    <a href="index.html#product" id="browse-collection" class="btn px-4 py-2 rounded-pill fw-semibold">
+                        Browse Our Collection
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-md-6 col-12">
+                    <h3>Tech<span>paul</span></h3>
+                    <p>Specializing in premium Logitech mice for gaming, design, and work.</p>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Showcase</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h4>Affiliates</h4>
+                    <ul>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-12">
+                    <h4>Link</h4>
+                    <ul>
+                        <li class="menu-links"><a href="./index.html">Home</a></li>
+                        <li class="menu-links"><a href="./index.html#about">About</a></li>
+                        <li class="menu-links"><a href="#product">Product</a></li>
+                        <li class="menu-links"><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/JP.delacera.78/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.com/channels/@me"><i class="fab fa-discord"></i></a>
+                    </div>
+                    <p class="mt-3">© 2025 TechGear. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="../js/auth.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+
+</html>
